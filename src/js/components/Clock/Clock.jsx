@@ -1,4 +1,4 @@
-/* global cleanInterval */
+/* global clearInterval */
 
 import './Clock.scss';
 import React, { Component } from 'react';
@@ -16,7 +16,7 @@ export default class Clock extends Component {
     }
 
     componentWillUnmount () {
-        cleanInterval(this.timer);
+        clearInterval(this.timer);
     }
 
     render () {
