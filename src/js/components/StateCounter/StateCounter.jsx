@@ -1,6 +1,7 @@
+import './StateCounter.scss';
 import React, { Component } from 'react';
 
-export default class Counter extends Component {
+export default class StateCounter extends Component {
     constructor () {
         super();
         this.state = {
@@ -13,6 +14,6 @@ export default class Counter extends Component {
     };
 
     render () {
-        return <button onClick={this.handleClick}>Click me {this.state.count}</button>;
+        return <button className={'state-counter'} onClick={this.handleClick}>Click me {this.state.count}</button>;
     }
 }
